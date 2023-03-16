@@ -3,12 +3,21 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
+#Lab 6- Dima Alsheikh
+
 def encode(password):
     encoded = ""
     for i in password:
         digit = int(i) + 3
         encoded += str(digit)
     return encoded
+
+def decode(password):
+    decoded = ""
+    for i in password:
+        digit = int(i) - 3
+        decoded += str(digit)
+    return decoded
 
 
 def main():
