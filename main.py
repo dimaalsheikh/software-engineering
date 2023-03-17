@@ -1,9 +1,4 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-#Lab 6- Dima Alsheikh
+#Lab 6 - Dima Alsheikh
 
 def encode(password):
     encoded = ""
@@ -26,7 +21,8 @@ def main():
         print("Menu")
         print("-------------")
         print("1. Encode")
-        print("2. Quit")
+        print("2. Decode")
+        print("3. Quite")
         print()
 
         menu_selection = int(input("Please enter an option: "))
@@ -36,6 +32,10 @@ def main():
             print("The encoded password is " + encoded)
 
         elif menu_selection == 2:
+            decoded = decode(encoded)
+            print("The encoded password is " + encoded + " and the original password is " + decoded + ".")
+
+        elif menu_selection == 3:
             break
 
 
