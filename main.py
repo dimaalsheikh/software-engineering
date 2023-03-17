@@ -29,12 +29,10 @@ def main():
         if menu_selection == 1:
             password = input("Please enter your password to encode: ")
             encoded = encode(password)
-            print("The encoded password is " + encoded)
-
+            print("Your password has been encoded and stored!\n")
         elif menu_selection == 2:
             decoded = decode(encoded)
-            print("The encoded password is " + encoded + " and the original password is " + decoded + ".")
-
+            print("The encoded password is " + encoded + ", and the original password is " + decoded + ".\n")
         elif menu_selection == 3:
             break
 
